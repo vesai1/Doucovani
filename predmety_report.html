@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Ajax Data Table priklad</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=x3GR6N2VgnrNyl7GgZYo9p6dgshuQT07oyU9n00VTZ9kMuTx9nwt-0NY27DyHt4-1eSCZJplkPtigFjjphzSSEvFAUFqCR186LBYrJt3FAo6jMj5Hwu1m9k-gEAbCRW2ImC8FT1r57FLlG8LARJArTt7Nfc3ZabKhoAEBzVywcKnv5oHIJSeP_d9DcxlbOUc" charset="UTF-8"></script><script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
+  <script src="https://cdn.datatables.net/responsive/2.2.9/js/dataTables.responsive.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/responsive/2.2.9/css/responsive.dataTables.min.css" />
+  <script type="text/javascript" src="predmety.js"></script>
+</head>
+<div id="msg"></div>
+<div class="container">
+<br>
+<input id="vytvorit" type="submit" name="vytvorit" value="Vytvořit" class="btn btn-primary " action="predmety_form.php"> </input>
+<br>
+</div>
+<table id="example" class="display responsive nowrap" style="width:100%">
+        <thead>
+            <tr>
+                <th>Předmět</th>
+                <th>Popis</th>
+                <th>Smazat</th>
+                <th>Edit</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+              <th>Předmět</th>
+              <th>Popis</th>
+              <th>Smazat</th>
+              <th>Edit</th>
+            </tr>
+        </tfoot>
+    </table>
+    <br>
+
+    <script>
+
+
+    $(document).ready(function() {
+
+      NactiData_pred();
+      reg_btn_vytvorit_pred();
+    });
+
+
+
+
+
+    </script>
+
+</html>
